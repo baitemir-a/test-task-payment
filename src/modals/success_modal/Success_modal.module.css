@@ -1,0 +1,21 @@
+.successModal {
+  max-width: 460px;
+  padding: 20px;
+  box-shadow: var(--box-shadow);
+  border: var(--border-form);
+  border-radius: var(--border-radius-form);
+}
+
+.modalHeader > svg {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.modalText {
+    text-align: center;
+}  
+
+.modalCash p{
+    color: #5ABA65;
+}

@@ -1,0 +1,28 @@
+.card {
+  background: var(--gradient-red);
+}
+
+.spb {
+  background: #fff;
+}
+
+.check {
+  background: var(--gradient__bg);
+}
+
+.icon {
+  padding: 8px;
+  border-radius: 12px;
+}
+
+.checkIconContainer {
+  padding: 20.5px 20px;
+  border-radius: 50%;
+  background-color: #61b46926;
+}
+
+.crossIconContainer {
+  padding: 14px;
+  border-radius: 50%;
+  background-color: #f4346126;
+}

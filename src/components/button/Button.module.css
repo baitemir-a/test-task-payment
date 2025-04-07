@@ -1,0 +1,66 @@
+.button {
+  background: var(--gradient__bg);
+  /* width: 100%; */
+  width: 100px;
+  padding: 14.5px 0;
+  border: none;
+  border-radius: var(--border-radius);
+  color: var(--bg-white);
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.disabled {
+  background: #f5f5f5 !important;
+  color: var(--text-grey) !important;
+  cursor: not-allowed;
+}
+
+.disabled > svg {
+  fill: var(--text-grey) !important;
+}
+
+.buttonWhite {
+  background: #fff;
+  width: 100%;
+  padding: 14.5px 0;
+  border: none;
+  border-radius: var(--border-radius);
+  color: #42914a;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.buttonIcon {
+  background: var(--gradient__bg);
+  width: 100%;
+  padding: 14.5px 0;
+  border: none;
+  border-radius: var(--border-radius);
+  color: var(--bg-white);
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.buttonIcon > svg {
+  margin-right: 10px;
+}
+
+.buttonIconRed {
+  background: var(--gradient-red);
+  width: 100%;
+  padding: 14.5px 0;
+  border: none;
+  border-radius: var(--border-radius);
+  color: var(--bg-white);
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.buttonIconRed > svg {
+  margin-right: 10px;
+}

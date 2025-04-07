@@ -1,0 +1,112 @@
+.inputBox {
+  position: relative;
+}
+
+.inputBox input {
+  width: 100%;
+  padding: 14px 16px;
+  height: 55px;
+  outline: none;
+  background: transparent;
+  border-radius: var(--border-radius);
+  color: #090F1E;
+  border: 1px solid var(--border-grey);
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.inputBox .inputWithLeftIcon {
+  width: 100%;
+  padding: 14px 16px;
+  height: 55px;
+  outline: none;
+  background: transparent;
+  border-radius: var(--border-radius);
+  color: #090F1E;
+  border: 1px solid var(--border-grey);
+  font-size: 16px;
+  padding-left: 45px;
+  font-weight: 700;
+}
+
+.inputBox span {
+  position: absolute;
+  left: 0;
+  font-size: 0.7em;
+  transform: translateX(14px) translateY(-7.5px);
+  padding: 0 6px 1px 5px;
+  background: var(--bg-white);
+  letter-spacing: 1px;
+  color: #212121;
+}
+
+.inputBox .inputIcon{
+  right: 10px;
+  top: 17px;
+  cursor: pointer;
+}
+
+.inputBox .inputLeftIcon {
+  top: 0;
+  left: 0;
+}
+
+.inputBox.grey {
+  background-color: #f2f2f2;
+  cursor: not-allowed;
+}
+
+.inputBox.grey span {
+  background-color: inherit; 
+  color: #b0b0b0; 
+}
+
+.inputBoxGreen {
+  position: relative;
+}
+
+.inputBoxGreen > svg {
+  fill: #B1F5B8 !important;
+}
+
+.inputBoxGreen input {
+  width: 100%;
+  padding: 14px 16px;
+  height: 55px;
+  outline: none;
+  background: transparent;
+  border-radius: var(--border-radius);
+  color: white;
+  border: 1px solid #FFFFFF26;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+
+.inputBox .inputLeftIcon {
+  left: 10px;  /* Position icon to the left of the input */
+  top: 50%;
+  transform: translateY(-50%); /* Vertically center the icon */
+  cursor: pointer;
+}
+
+.inputBoxGreen input::placeholder {
+  color: white;
+}
+
+.inputBoxGreen span {
+  position: absolute;
+  left: 0;
+  font-size: 0.7em;
+  transform: translateX(14px) translateY(-7.5px);
+  padding: 0 6px 1px 5px;
+  background: inherit;
+  letter-spacing: 1px;
+  color: white;
+}
+
+.inputBoxGreen .inputIcon{
+  right: 10px;
+  top: 17px;
+  cursor: pointer;
+}

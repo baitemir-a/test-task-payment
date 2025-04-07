@@ -1,0 +1,11 @@
+FROM node:21-alpine
+WORKDIR "/app"
+COPY package.json .
+COPY ./libs/np-np_webcomponentlib-1.1.21.tgz ./libs/np-np_webcomponentlib-1.1.21.tgz
+RUN npm install
+COPY . .
+COPY .envP .env
+RUN npm install esbuild@0.21.5 --save-dev
+RUN npm run build
+EXPOSE 8080
+CMD ["npm", "run", "preview"]

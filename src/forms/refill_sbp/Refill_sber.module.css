@@ -1,0 +1,24 @@
+.refillWindow{
+    /* width: 50%; */
+    padding: 24px;
+    max-width: 460px;
+    box-shadow: var(--box-shadow);
+    border: var(--border-form);
+    border-radius: var(--border-radius-form);
+    cursor: pointer;
+}
+
+.refillWindow h3{
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--text-title-color);
+}
+
+.countdownContainer > p{
+    font-size: 12px;
+    color: var(--text-grey);
+}
+
+.refillSberPaidButtonContainer{
+    width: 50%;
+}

@@ -1,0 +1,14 @@
+.instruction {
+  max-width: 460px;
+  padding: 24px;
+  background-color: #FAFAFA;
+  box-shadow: var(--box-shadow);
+  border: var(--border-form);
+  border-radius: var(--border-radius-form);
+}
+
+.instructionContainer {
+    border-radius: var(--border-radius-form);
+    padding: 16px;
+    background-color: #fff;
+}

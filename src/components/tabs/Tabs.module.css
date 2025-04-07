@@ -1,0 +1,32 @@
+.tabsContainer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  border: 1px solid #f0eded;
+  border-radius: 8px;
+}
+
+.tabs {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.tab {
+  flex: 1;
+  text-align: center;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+  color: #7F7A95;
+  transition: all 0.3s ease;
+  border: 1px solid transparent;
+  font-size: 14px;
+}
+
+.activeTab {
+  border-radius: 8px;
+  background-color: #61b469;
+  color: white;
+  border-bottom: none;
+  font-weight: bold;
+}

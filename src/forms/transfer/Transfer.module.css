@@ -1,0 +1,17 @@
+.refillWindow{
+    /* width: 50%; */
+    padding: 24px;
+    max-width: 460px;
+    box-shadow: var(--box-shadow);
+    border: var(--border-form);
+    border-radius: var(--border-radius-form);
+}
+
+.paidContainer strong{
+    font-size: 14px;
+}
+
+.cancelContainer p{
+    font-size: 14px;
+    color: var(--text-grey);
+}

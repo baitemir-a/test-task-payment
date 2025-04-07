@@ -1,0 +1,17 @@
+.countdownContainer{
+    background-color: #fff;
+    padding: 7px;
+    border-radius: var(--border-radius);
+    color: #42914A;
+}
+
+.countdown{
+    font-size: 16px;
+    font-weight: 700;
+}
+
+@media screen and (max-width: 354px) {
+    .countdown{
+        font-size: 14px;
+    }
+}

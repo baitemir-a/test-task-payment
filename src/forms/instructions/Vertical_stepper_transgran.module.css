@@ -1,0 +1,101 @@
+:root {
+  --circle-size: 22px;
+  --spacing: calc(var(--circle-size) / 2);
+}
+
+.wrapper {
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.cStepper {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.cStepperItem {
+  position: relative;
+  display: flex;
+  gap: 1rem;
+  padding-bottom: 30px;
+  align-items: center; 
+}
+
+.cStepperDescWrapper {
+  position: relative;
+}
+
+.cStepperItem::before {
+  content: "";
+  flex-shrink: 0;
+  width: var(--circle-size);
+  height: var(--circle-size);
+  border-radius: 50%;
+  background-color: white;
+  border: 7px solid #61b469;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  position: absolute;
+  left: 0;
+  top: 50%; /* Position relative to the stepperItem */
+  transform: translate(-50%, -50%); /* Ensures centering */
+}
+
+/* Connecting line between steps */
+.cStepperItem:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: calc(
+    var(--circle-size) + var(--spacing) + 45%
+  ); /* Adjusted to move down slightly */
+  bottom: calc(var(--spacing) - 45%); /* Adjust bottom to maintain alignment */
+  border: 1px dashed #61b469;
+}
+
+/* Title Styling */
+.cStepperTitle {
+  font-size: 14px;
+  font-weight: bold;
+  padding: 6px 12px;
+  background-color: #61b469;
+  color: white;
+  border-radius: 8px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  display: inline-block;
+  min-width: 60px;
+  position: relative;
+  top: 10px;
+  left: 15px;
+  margin-bottom: -10px;
+  z-index: 1;
+}
+
+/* Description Box Styling */
+.cStepperDesc {
+  background-color: #f5f5f5;
+  padding: 14px;
+  border-radius: 8px;
+  color: #333;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.6;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 0;
+}
+
+.cStepperContent {
+  max-width: 700px;
+  margin-left: calc(
+    var(--circle-size) + 1rem
+  ); /* Ensures proper spacing for the circle */
+  position: relative;
+}
+
+.stepperDescIcon {
+  position: absolute;
+  left: -10px; /* Adjust to fine-tune */
+  top: 50%;
+  transform: translateY(-50%);
+}

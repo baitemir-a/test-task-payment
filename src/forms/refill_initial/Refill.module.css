@@ -1,0 +1,34 @@
+.refillWindow {
+  /* width: 50%; */
+  max-width: 460px;
+  padding: 24px;
+  box-shadow: var(--box-shadow);
+  border: var(--border-form);
+  border-radius: var(--border-radius-form);
+  cursor: pointer;
+}
+
+.refillWindow h3 {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--text-title-color);
+}
+
+.captcha {
+  width: 100%; /* Take up all available width */
+  max-width: 400px; /* You can set a max-width to limit the size */
+  margin: 0 auto; /* Center the CAPTCHA horizontally */
+  display: flex;
+  justify-content: center;
+}
+
+
+.captcha > iframe{
+    width: 100% !important;
+}
+
+@media  screen and (max-width: 376px) {
+    .captcha > div > iframe{
+        width: 290px !important;
+    }
+}
